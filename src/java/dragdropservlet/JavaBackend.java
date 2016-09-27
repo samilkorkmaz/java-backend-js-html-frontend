@@ -75,8 +75,7 @@ public class JavaBackend extends HttpServlet {
             polygonList.get(iSelected).translate(mouseX - prevMouseX, mouseY - prevMouseY);
             prevMouseX = mouseX;
             prevMouseY = mouseY;
-            if (polygonList.get(iSelected).isCloseTo(snapPolygonList.get(iSelected))) {
-            }
+            polygonList.get(iSelected).isCloseTo(snapPolygonList.get(iSelected));
         }
 
         JsonObjectBuilder dataToJavaScript = Json.createObjectBuilder();
